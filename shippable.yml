@@ -15,9 +15,4 @@ script:
   #- phpunit --coverage-xml shippable/codecoverage/ --bootstrap tests/bootstrap.php tests
   
   - phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage --bootstrap tests/bootstrap.php tests
-  - echo $name
-  - echo $version and $language
-
-
-after_archive:
-      - echo $SHIPPABLE_ARTIFACTS_URL
+  
