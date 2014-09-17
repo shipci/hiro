@@ -5,9 +5,9 @@ php:
 
 before_script:
   - composer dumpautoload
+  - ls env:
 
 script:
-  - ls env
   - php -v
   - php -l tests/ServiceContainerTest.php
   - phpunit --bootstrap tests/bootstrap.php tests
